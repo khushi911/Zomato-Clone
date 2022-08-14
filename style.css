@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+}
+header{
+    width: 100%;
+    height: 70vh;   /* 70 view height: 70 percent of the screen */
+    overflow: hidden; /* anything overflowing from the header:hidden */
+    position: relative;
+    object-fit: cover; /* property used to specify how an <img> or <video> should be resized to fit its container. */
+    margin-bottom: 2rem;
+
+}
+.header-image{
+    width: 100%;
+    position: absolute;
+    top: -20vh;
+    z-index: -1;/* The z-index property specifies the stack order of an element.
+                An element with greater stack order is always in front of an element with a lower stack order. */
+
+}
+.header-image img{
+    width:100%;
+}
+.nav{
+    display: flex; /* makes elements inside tags move from left to right ,left:get the app ,right: list */
+    justify-content: space-between; /* adds space between them, works horizontally*/
+    align-items: center; /*works vertically */
+    color: white;
+    font-size: 1rem;
+    margin: 0 40px;
+}
+.nav-bar{
+    list-style: none; /*no bullet points */
+    font-weight: lighter;/* shrinks the width of the font stroke */
+    display: flex;
+    gap: 1.5rem; /* introduces gap bw these elements */
+}
+.head{
+    display:flex;/*The flex property sets the flexible length on flexible items, Resize the browser window to see that the direction changes */
+    flex-direction: column; /* The "flex-direction: row;" stacks the flex items horizontally (from left to right).
+                           The "flex-direction: column;" stacks the flex items vertically (from top to bottom), vertically aligned in this case*/
+                           /* by default it is row*/
+    justify-content: center;
+    margin-top: 7vh;
+    align-items: center;
+}
+.logo{
+    width: 20vw;
+}
+.head h3{
+    font-size: 2.1rem; /* rem values are relative to the root html element, not to the parent element. That is, If font-size of the root element is 16px then 1 rem = 16px for all elements */
+    color: whitesmoke;
+    font-weight: 400;
+}
+.search{
+    display: flex;
+    align-items: center;
+    width: 55vw;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px 4px;/* 5 top and bottom,4 left to right*/
+}
+.search .search-item{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.search .search-item p{
+    color: gray;
+    border-right: 1px solid gray;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.search .search-item input{
+    outline: none;
+    border: none;
+    width: 200%;
+    padding-left: 10px;
+    font-size: 15px;
+}
+.search .search-item:first-child{
+    /* 2 classes of the same name :here,the first one*/
+    color: palevioletred;
+    width:30%;
+}
+.search .search-item:last-child{
+
+    width: 70%;
+    color: gray;
+}
+ /* SECTION 1  */
+
+.section-1{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 4rem;
+}
+.section-1 .section-1-item{
+    position: relative;
+    width: 15rem;
+    margin: 3px 5px;
+    overflow:hidden;/* anything that flows out of the box:hidden*/
+    border-radius: 10px;
+    background: white;
+    border: 1px solid rgb(218, 210, 210);
+    
+}
+.section-1 .section-1-item img{
+     width: 100%;
+     border: 1px solid rgb(218, 210, 210);
+     border-radius: 10px;
+     z-index:-1;
+}
+.section-1 .section-1-item .items-detail{
+    position:absolute;
+    bottom: 3px;
+    align-items: center;
+    border: 0 0 10px 10px;
+    background: white;
+    width: 100%;
+    height: 25%;
+    z-index: 2;
+}
+.section-1 .section-1-item .items-detail p{
+    text-align: center;
+}
+/* SECTION-2 */
+.section-2{
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+.section-2-heading{
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 400px;
+}
+.section-2 .section-2-container .section-2-items{
+    display: flex;
+    flex-wrap: wrap;/* The flex-wrap CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.*/
+    justify-content: space-between;
+}
+.section-2 .section-2-container .section-2-items .section-2-item{
+    width: 100%;
+    max-width: 26%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(159, 158, 158);/*in the x direction, in the y direction,the spread,the color */
+    padding: 15px;
+
+}
+.section-2-item .item-head{
+    font-size: 1.2rem;
+    color: rgb(73, 68, 68);
+    margin:0px;
+    
+    
+}
+.section-2-item .item-subhead{
+    font-weight: lighter;
+    color: rgb(73, 68, 68);
+    margin:0px;
+    
+}
+/* SECTION-3 */
+.section-3{
+    height: 620px;
+    background-color: rgb(255, 251, 247);
+
+}
+.section-3-container{
+    width:1080px;
+    height: 100%;
+    margin: 0 auto;/* 0 top and bottom , auto from left & right,will come to the center*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.section-3-img img{
+    width:300px;
+}
+.section-3-content h1{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    margin: 0;
+    font-weight: lighter;
+}
+.section-3-content p{
+    font-size: 1.2rem;
+    font-weight: lighter;
+
+}
+.section-3-download img{
+    width:40%;
+}
+footer{
+    display:flex;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
