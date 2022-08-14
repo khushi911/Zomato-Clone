@@ -1,3 +1,3 @@
 # Zomato-Clone
 Created Zomato clone using HTML & CSS </br>
-Check it out here
+Check out the website [here](https://khushi911.github.io/Zomato-Clone/)
